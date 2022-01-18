@@ -29,7 +29,7 @@ header {
   @include container;
 
   & .header__brand {
-    max-width: 20%;
+    max-width: 10%;
   }
 
   & .header__navbar {
@@ -41,7 +41,7 @@ header {
         margin: 0 1rem;
         text-transform: uppercase;
         font-size: 0.8rem;
-        font-weight: bold;
+        font-weight: 500;
         letter-spacing: 1px;
 
         .active {
@@ -79,9 +79,12 @@ header {
   padding: 0;
 
   & .gallery__card {
+    color: $primary-color;
     width: 30%;
     height: 400px;
     margin-bottom: 4%;
+    @include flex-center;
+    flex-direction: column;
 
     & .gallery__card-title {
       font-size: 1.5rem;
@@ -149,5 +152,27 @@ header {
 
   #card-9 {
     @include bg-img("meals.jpg");
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 24px;
+  background-color: $bg-footer-color;
+
+  h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 0.85rem;
+    font-weight: normal;
+  }
+
+  a {
+    font-weight: bold;
+    color: $secondary-color;
   }
 }

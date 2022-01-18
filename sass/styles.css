@@ -30,11 +30,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1170px;
+  padding: 4rem 0;
   margin: 0 auto;
 }
 
 header .header__brand {
-  max-width: 20%;
+  max-width: 10%;
 }
 
 header .header__navbar ul {
@@ -54,16 +55,16 @@ header .header__navbar ul li {
   margin: 0 1rem;
   text-transform: uppercase;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
 header .header__navbar ul li .active {
-  color: #64ffda;
+  color: #ffeb3b;
 }
 
 header .header__navbar ul li a:hover {
-  color: #64ffda;
+  color: #ffeb3b;
 }
 
 header .header__social-media ul {
@@ -84,11 +85,12 @@ header .header__social-media ul li {
 }
 
 header .header__social-media ul li a:hover {
-  color: #64ffda;
+  color: #ffeb3b;
 }
 
 .gallery {
   max-width: 1170px;
+  padding: 4rem 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,9 +110,23 @@ header .header__social-media ul li a:hover {
 }
 
 .gallery .gallery__card {
+  color: #fff;
   width: 30%;
   height: 400px;
   margin-bottom: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gallery .gallery__card .gallery__card-title {
@@ -141,13 +157,22 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
+  -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+.gallery #card-1:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/animals.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/animals.jpg");
 }
 
 .gallery #card-2 {
@@ -157,13 +182,22 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
+  -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+.gallery #card-2:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/architecture.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/architecture.jpg");
 }
 
 .gallery #card-3 {
@@ -173,8 +207,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-3:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/city.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/city.jpg");
 }
 
 .gallery #card-4 {
@@ -184,8 +226,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-4:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/decoration.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/decoration.jpg");
 }
 
 .gallery #card-5 {
@@ -195,8 +245,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-5:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/sports.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/sports.jpg");
 }
 
 .gallery #card-6 {
@@ -206,8 +264,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-6:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/nature.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/nature.jpg");
 }
 
 .gallery #card-7 {
@@ -217,8 +283,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-7:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/landscape.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/landscape.jpg");
 }
 
 .gallery #card-8 {
@@ -228,8 +302,16 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-8:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/people.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/people.jpg");
 }
 
 .gallery #card-9 {
@@ -239,7 +321,37 @@ header .header__social-media ul li a:hover {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery #card-9:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/meals.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/meals.jpg");
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 24px;
+  background-color: #0e0e0c;
+}
+
+footer h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+footer a {
+  font-weight: bold;
+  color: #ffeb3b;
 }
 /*# sourceMappingURL=styles.css.map */
