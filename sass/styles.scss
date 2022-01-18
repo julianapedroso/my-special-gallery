@@ -28,8 +28,32 @@ header {
   justify-content: space-between;
   @include container;
 
+  @include laptop {
+    padding: 6%;
+  }
+
+  @include tablet {
+    padding: 4%;
+  }
+
+  @include mobile-lg {
+    padding: 4% 8%;
+  }
+
+  @include mobile-md {
+    padding: 6% 8%;
+  }
+
   & .header__brand {
     max-width: 10%;
+
+    @include laptop {
+      max-width: 12%;
+    }
+
+    @include mobile-lg {
+      max-width: 22%;
+    }
   }
 
   & .header__navbar {
@@ -37,15 +61,27 @@ header {
       height: 100%;
       @include flex-center;
 
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile-lg {
+        display: none;
+      }
+
       li {
         margin: 0 1rem;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 500;
         letter-spacing: 1px;
 
         .active {
           color: $secondary-color;
+        }
+    
+        &:hover::after {
+          @include after-effect;
         }
 
         & a:hover {
@@ -59,6 +95,14 @@ header {
     ul {
       @include flex-center;
       height: 100%;
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile-lg {
+        display: none;
+      }
 
       li {
         margin: 0 1rem;
@@ -78,6 +122,18 @@ header {
   justify-content: space-between;
   padding: 0;
 
+  @include laptop {
+    padding: 6%;
+  }
+
+  @include tablet {
+    padding: 4%;
+  }
+
+  @include mobile-lg {
+    flex-direction: column;
+  }
+
   & .gallery__card {
     color: $primary-color;
     width: 30%;
@@ -85,6 +141,17 @@ header {
     margin-bottom: 4%;
     @include flex-center;
     flex-direction: column;
+
+    @include mobile-lg {
+      width: 90%;
+      padding: 4%;
+    }
+
+    & img {
+      @include tablet {
+        width: 100%;
+      }
+    }
 
     & .gallery__card-title {
       font-size: 1.5rem;
@@ -94,7 +161,7 @@ header {
 
     & .gallery__card-btn {
       color: $primary-color;
-      border: 2px solid $primary-color;
+      border: 2px solid $secondary-color;
       border-radius: 5px;
       font-weight: 400;
       padding: 0.6rem 2rem;
@@ -102,7 +169,7 @@ header {
       letter-spacing: 1px;
 
       &:hover {
-        background-color: $primary-color;
+        background-color: $secondary-color;
         color: $bg-color;
       }
     }
@@ -140,10 +207,18 @@ header {
 
   #card-6 {
     @include bg-img("nature.jpg");
+
+    @include laptop {
+      background-size: 150%;
+    }
+
+    @include tablet {
+      background-size: 120%;
+    }
   }
 
   #card-7 {
-    @include bg-img("landscape.jpg");
+    @include bg-img("lanscape.jpg");
   }
 
   #card-8 {
@@ -152,6 +227,14 @@ header {
 
   #card-9 {
     @include bg-img("meals.jpg");
+
+    @include laptop {
+      background-size: 150%;
+    }
+
+    @include tablet {
+      background-size: 120%;
+    }
   }
 }
 
@@ -164,11 +247,31 @@ footer {
   h3 {
     font-size: 0.9rem;
     font-weight: 500;
+
+    @include mobile-md {
+      font-size: 0.8rem;
+      padding: 0 0.3rem;
+    }
+
+    @include mobile-sm {
+      font-size: 0.7rem;
+      padding: 0 0.2rem;
+    }
   }
 
   p {
     font-size: 0.85rem;
     font-weight: normal;
+
+    @include mobile-md {
+      font-size: 0.75rem;
+      padding: 0 0.3rem;
+    }
+
+    @include mobile-sm {
+      font-size: 0.65rem;
+      padding: 0 0.2rem;
+    }
   }
 
   a {

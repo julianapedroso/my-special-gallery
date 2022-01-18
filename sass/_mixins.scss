@@ -12,6 +12,16 @@
   justify-content: center;
 }
 
+@mixin after-effect {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 0.2rem;
+    background-color: $secondary-color;
+    transition: 0.5s ease all;
+}
+
 @mixin bg-img($img) {
   background-image: url("../assets/#{$img}");
   background-size: 100%;
@@ -24,5 +34,35 @@
     background-size: 110%;
     filter: grayscale(0%);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/#{$img}");
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobile-md {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-sm {
+  @media (max-width: 320px) {
+    @content;
   }
 }

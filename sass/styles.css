@@ -34,8 +34,44 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  header {
+    padding: 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 4%;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 4% 8%;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 6% 8%;
+  }
+}
+
 header .header__brand {
   max-width: 10%;
+}
+
+@media (max-width: 1024px) {
+  header .header__brand {
+    max-width: 12%;
+  }
+}
+
+@media (max-width: 425px) {
+  header .header__brand {
+    max-width: 22%;
+  }
 }
 
 header .header__navbar ul {
@@ -51,16 +87,39 @@ header .header__navbar ul {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  header .header__navbar ul {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  header .header__navbar ul {
+    display: none;
+  }
+}
+
 header .header__navbar ul li {
   margin: 0 1rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
 
 header .header__navbar ul li .active {
   color: #ffeb3b;
+}
+
+header .header__navbar ul li:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 0.2rem;
+  background-color: #ffeb3b;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 header .header__navbar ul li a:hover {
@@ -78,6 +137,18 @@ header .header__social-media ul {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  header .header__social-media ul {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  header .header__social-media ul {
+    display: none;
+  }
 }
 
 header .header__social-media ul li {
@@ -109,6 +180,27 @@ header .header__social-media ul li a:hover {
   padding: 0;
 }
 
+@media (max-width: 1024px) {
+  .gallery {
+    padding: 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 4%;
+  }
+}
+
+@media (max-width: 425px) {
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .gallery .gallery__card {
   color: #fff;
   width: 30%;
@@ -129,6 +221,19 @@ header .header__social-media ul li a:hover {
           flex-direction: column;
 }
 
+@media (max-width: 425px) {
+  .gallery .gallery__card {
+    width: 90%;
+    padding: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery .gallery__card img {
+    width: 100%;
+  }
+}
+
 .gallery .gallery__card .gallery__card-title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -137,7 +242,7 @@ header .header__social-media ul li a:hover {
 
 .gallery .gallery__card .gallery__card-btn {
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #ffeb3b;
   border-radius: 5px;
   font-weight: 400;
   padding: 0.6rem 2rem;
@@ -146,7 +251,7 @@ header .header__social-media ul li a:hover {
 }
 
 .gallery .gallery__card .gallery__card-btn:hover {
-  background-color: #fff;
+  background-color: #ffeb3b;
   color: #000;
 }
 
@@ -276,8 +381,20 @@ header .header__social-media ul li a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/nature.jpg");
 }
 
+@media (max-width: 1024px) {
+  .gallery #card-6 {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery #card-6 {
+    background-size: 120%;
+  }
+}
+
 .gallery #card-7 {
-  background-image: url("../assets/landscape.jpg");
+  background-image: url("../assets/lanscape.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,8 +408,8 @@ header .header__social-media ul li a:hover {
   background-size: 110%;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/landscape.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/landscape.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/lanscape.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/lanscape.jpg");
 }
 
 .gallery #card-8 {
@@ -333,6 +450,18 @@ header .header__social-media ul li a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/meals.jpg");
 }
 
+@media (max-width: 1024px) {
+  .gallery #card-9 {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery #card-9 {
+    background-size: 120%;
+  }
+}
+
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -345,9 +474,37 @@ footer h3 {
   font-weight: 500;
 }
 
+@media (max-width: 375px) {
+  footer h3 {
+    font-size: 0.8rem;
+    padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  footer h3 {
+    font-size: 0.7rem;
+    padding: 0 0.2rem;
+  }
+}
+
 footer p {
   font-size: 0.85rem;
   font-weight: normal;
+}
+
+@media (max-width: 375px) {
+  footer p {
+    font-size: 0.75rem;
+    padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  footer p {
+    font-size: 0.65rem;
+    padding: 0 0.2rem;
+  }
 }
 
 footer a {
