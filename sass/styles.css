@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+
+body a {
+  color: #777;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body ul {
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header .header__brand {
+  max-width: 20%;
+}
+
+header .header__navbar ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .header__navbar ul li .active {
+  color: #64ffda;
+}
+
+header .header__navbar ul li a:hover {
+  color: #64ffda;
+}
+
+header .header__social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+header .header__social-media ul li {
+  margin: 0 1rem;
+}
+
+header .header__social-media ul li a:hover {
+  color: #64ffda;
+}
+
+.gallery {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.gallery .gallery__card {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+
+.gallery .gallery__card .gallery__card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.gallery .gallery__card .gallery__card-btn {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 0.6rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery .gallery__card .gallery__card-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.gallery #card-1 {
+  background-image: url("../assets/animals.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
+.gallery #card-2 {
+  background-image: url("../assets/architecture.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
+.gallery #card-3 {
+  background-image: url("../assets/city.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-4 {
+  background-image: url("../assets/decoration.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-5 {
+  background-image: url("../assets/sports.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-6 {
+  background-image: url("../assets/nature.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-7 {
+  background-image: url("../assets/landscape.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-8 {
+  background-image: url("../assets/people.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.gallery #card-9 {
+  background-image: url("../assets/meals.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/*# sourceMappingURL=styles.css.map */
