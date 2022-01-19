@@ -2,6 +2,11 @@
 #### Projeto de estudo aplicando os conceitos de boas práticas utilizando o pré-processador Sass.
 <br />
 
+<h4 align='center'> 
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/julianapedroso/my-special-gallery">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/julianapedroso/my-special-gallery">
+</h4>
+
 <h4 align='center'>
 👉 Status: Concluído ✅👏
 </h4>
