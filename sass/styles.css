@@ -59,6 +59,7 @@ header {
 }
 
 header .header__brand {
+  border: 1px solid #000;
   max-width: 10%;
 }
 
@@ -70,7 +71,7 @@ header .header__brand {
 
 @media (max-width: 425px) {
   header .header__brand {
-    max-width: 22%;
+    max-width: 20%;
   }
 }
 

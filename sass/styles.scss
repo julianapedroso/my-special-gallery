@@ -46,6 +46,7 @@ header {
   }
 
   & .header__brand {
+    border: 1px solid $bg-color;
     max-width: 10%;
 
     @include laptop {
@@ -53,7 +54,7 @@ header {
     }
 
     @include mobile-lg {
-      max-width: 22%;
+      max-width: 20%;
     }
   }
 
